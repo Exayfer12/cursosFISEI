@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PageListComponent } from './pages/page-list/page-list.component';
+import { PageListComponent } from './pages/page-form/page-list.component';
 import { FormComponent } from './components/form/form.component';
+import { PageFormComponent } from './pages/page-form/page-form.component';
 
 
 
 @NgModule({
   declarations: [
     PageListComponent,
-    FormComponent
+    FormComponent,
+    PageFormComponent
   ],
   imports: [
     CommonModule

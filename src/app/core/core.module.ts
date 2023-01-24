@@ -16,7 +16,8 @@ import { ListComponent } from './components/list/list.component';
     CommonModule
   ],
   exports:[
-    PageListComponent
+    PageListComponent,
+    HeaderComponent
   ]
 })
 export class CoreModule { }
