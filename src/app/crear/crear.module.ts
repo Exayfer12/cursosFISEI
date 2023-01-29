@@ -1,22 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PageListComponent } from './pages/page-form/page-list.component';
 import { FormComponent } from './components/form/form.component';
 import { PageFormComponent } from './pages/page-form/page-form.component';
-
-
+import { CrearRoutingModule } from './crear-routing.module';
 
 @NgModule({
   declarations: [
-    PageListComponent,
     FormComponent,
     PageFormComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    CrearRoutingModule
   ],
-  exports:[
-    PageListComponent
-  ]
+
 })
 export class CrearModule { }

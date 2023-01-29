@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { ListComponent } from './core/components/list/list.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path:"inicio", component:ListComponent},
+  {path:"cursos", loadChildren:()=>import('./crear/crear.module').then((m)=>m.CrearModule)}
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{preloadingStrategy: PreloadAllModules}),],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
