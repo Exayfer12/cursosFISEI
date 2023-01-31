@@ -15,7 +15,7 @@ export class AsistenciaComponent implements OnInit {
     {cedula:'52', nombre:'Alejandro', apellido:'Pazmiño'},
   ]
 
-  ListFields: string[] = ['CEDULA','NOMBRE','APELLIDO']
+  ListFields: string[] = ['CEDULA','NOMBRE']
 
   constructor() { }
 
