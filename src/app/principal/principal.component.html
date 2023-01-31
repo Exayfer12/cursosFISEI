@@ -1,14 +1,15 @@
-<div class="contenedor__cards grid">  
-
-  <div class="card h-100" style="width: 18rem;" *ngFor="let item of data">
-    <img src="{{item.imagen}}" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">{{item.nombre}}</h5>
-      <p class="card-text">
-      {{item.descripcion}}
-      <br> Número de horas: {{item.horas}}
-      </p>
-      <a href="#" class="btn btn-danger">Comprar</a>
+<div class="container">  
+  <div class="contenedor__cards grid">
+    <div class="card h-100" style="width: 18rem;" *ngFor="let item of data">
+      <img src="{{item.imagen}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{item.nombre}}</h5>
+        <p class="card-text">
+        {{item.descripcion}}
+        <br> Número de horas: {{item.horas}}
+        </p>
+        <a href="#" class="btn btn-danger">Comprar</a>
+      </div>
     </div>
   </div>
 </div>
