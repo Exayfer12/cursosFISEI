@@ -18,7 +18,8 @@
     </thead>
     <tbody class="table-secondary">
         <tr *ngFor="let persona of data">
-            <td>Javier Alexander Jiménez Castro</td>
+            <td>{{persona.cedula}}</td>
+            <td>{{persona.nombre}} {{persona.apellido}}</td>
             <td>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" 
