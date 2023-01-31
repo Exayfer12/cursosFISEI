@@ -7,3 +7,8 @@
     display: grid;
     align-items: center;
 }
+
+.contenedor__cards {
+    display: grid;
+    grid-template-columns: 116px repeat(2, 1fr);
+}
