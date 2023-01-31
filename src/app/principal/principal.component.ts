@@ -7,14 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrincipalComponent implements OnInit {
   data:any[] = [
-    {cedula:'12', nombre:'Jorge', apellido:'Delgado', cargo:'Gerente',correo: 'jorge@gmail.com'},
-    {cedula:'22', nombre:'Karla', apellido:'Martínez', cargo:'Contador',correo: 'karla@gmail.com'},
-    {cedula:'32', nombre:'Mishell', apellido:'Villegas', cargo:'Contador',correo: 'mishell@gmail.com'},
-    {cedula:'42', nombre:'Monserrath', apellido:'Olaya', cargo:'Gerente',correo: 'monse@gmail.com'},
-    {cedula:'52', nombre:'Alejandro', apellido:'Pazmiño', cargo:'Gerente',correo: 'alejandro@gmail.com'},
+    {nombre:'Conferencia 1', horas:'32', modalidad:'Presencial', descripcion:'Conferencia número 1', imagen:'https://img-c.udemycdn.com/course/480x270/980450_7fc0_4.jpg'},
+    {nombre:'Conferencia 2', horas:'32', modalidad:'Presencial', descripcion:'Conferencia número 2', imagen:'https://img-c.udemycdn.com/course/480x270/980450_7fc0_4.jpg'},
+    {nombre:'Curso 1', horas:'30', modalidad:'Virtual', descripcion:'Curso número 1', imagen:'https://img-c.udemycdn.com/course/480x270/980450_7fc0_4.jpg'},
+    {nombre:'Curso 2', horas:'20', modalidad:'Presencial', descripcion:'Curso número 2', imagen:'https://img-c.udemycdn.com/course/480x270/980450_7fc0_4.jpg'},
+    {nombre:'Curso 3', horas:'40', modalidad:'Virtual', descripcion:'Curso número 3', imagen:'https://img-c.udemycdn.com/course/480x270/980450_7fc0_4.jpg'},
+    {nombre:'Conferencia 3', horas:'32', modalidad:'Presencial', descripcion:'Conferencia número 3', imagen:'https://img-c.udemycdn.com/course/480x270/980450_7fc0_4.jpg'},
+    {nombre:'Conferencia 4', horas:'12', modalidad:'Virtual', descripcion:'Conferencia número 4', imagen:'https://img-c.udemycdn.com/course/480x270/980450_7fc0_4.jpg'},
   ]
 
-  ListFields: string[] = ['cedula','nombre','apellido','cargo','correo']
+  //ListFields: string[] = ['cedula','nombre','apellido','cargo','correo']
 
   constructor() { }
 
