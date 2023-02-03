@@ -1,15 +1,49 @@
-<div class="container">  
-  <div class="contenedor__cards grid">
-    <div class="card h-100" style="width: 18rem;" *ngFor="let item of data">
-      <img src="{{item.imagen}}" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">{{item.nombre}}</h5>
-        <p class="card-text">
-        {{item.descripcion}}
-        <br> Número de horas: {{item.horas}}
-        </p>
-        <a href="#" class="btn btn-danger">Comprar</a>
+<header>
+  <app-header></app-header>
+</header>
+
+<body *ngIf="rol == 'usuario'">
+  <div class="container">  
+    <div class="contenedor__cards grid">
+      <div class="card h-100" style="width: 18rem;" *ngFor="let item of data">
+        <img src="{{item.imagen}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{item.nombre}}</h5>
+          <p class="card-text">
+          {{item.descripcion}}
+          <br> Número de horas: {{item.horas}}
+          </p>
+          <a href="#" class="btn btn-danger">Comprar</a>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</body>
+
+<body *ngIf="rol == 'admin'">
+  <div class="container">  
+    <div class="contenedor__cards grid">
+      <div class="card h-100" style="width: 18rem;" *ngFor="let item of data">
+        <img src="{{item.imagen}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{item.nombre}}</h5>
+          <p class="card-text">
+          {{item.descripcion}}
+          <br> Número de horas: {{item.horas}}
+          </p>
+          <div class="row">
+            <div class="col">
+              <a href="#" class="btn btn-warning">Editar</a>
+            </div>
+            <div class="col">
+              <a href="#" class="btn btn-danger">Eliminar</a>
+            </div>      
+          </div>
+          <div class="row mt-2">
+              <a href="/asistencia" class="btn btn-success">Tomar asistencia</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

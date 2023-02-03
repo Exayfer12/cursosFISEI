@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { ListComponent } from './core/components/list/list.component';
+import { AsistenciaComponent } from './asistencia/asistencia.component';
+import { LoginComponent } from './core/components/login/login.component';
+import { PrincipalComponent } from './principal/principal.component';
 
 const routes: Routes = [
-  {path:"inicio", component:ListComponent},
-  {path:"cursos", loadChildren:()=>import('./crear/crear.module').then((m)=>m.CrearModule)}
+  {path:'',component:LoginComponent},
+  {path:'principal',component:PrincipalComponent},
+  {path:'asistencia',component:AsistenciaComponent},
 ];
 
 @NgModule({

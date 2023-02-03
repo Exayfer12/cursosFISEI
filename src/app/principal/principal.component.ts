@@ -16,6 +16,8 @@ export class PrincipalComponent implements OnInit {
     {nombre:'Conferencia 4', horas:'12', modalidad:'Virtual', descripcion:'Conferencia número 4', imagen:'https://img-c.udemycdn.com/course/480x270/980450_7fc0_4.jpg'},
   ]
 
+  rol = 'admin';
+
   //ListFields: string[] = ['cedula','nombre','apellido','cargo','correo']
   constructor() { }
 
