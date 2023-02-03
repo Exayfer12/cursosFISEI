@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { AsistenciaComponent } from './asistencia/asistencia.component';
 import { CoreModule } from './core/core.module';
 import { PageLoginComponent } from './core/page/page-login/page-login.component';
+
 
 
 @NgModule({
@@ -21,7 +23,8 @@ import { PageLoginComponent } from './core/page/page-login/page-login.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CoreModule
+    CoreModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
