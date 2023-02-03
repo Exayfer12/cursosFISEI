@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { HeaderComponent } from './header/header.component';
 import { AsistenciaComponent } from './asistencia/asistencia.component';
+import { CoreModule } from './core/core.module';
+import { PageLoginComponent } from './core/page/page-login/page-login.component';
+
 
 @NgModule({
   declarations: [
@@ -13,10 +16,12 @@ import { AsistenciaComponent } from './asistencia/asistencia.component';
     PrincipalComponent,
     HeaderComponent,
     AsistenciaComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
