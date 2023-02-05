@@ -69,6 +69,7 @@ function leerDatosCurso(curso) {
 }
 
 // Elimina el curso del carrito en el DOM
+
 function eliminarCurso(e) {
      e.preventDefault();
      if(e.target.classList.contains('borrar-curso') ) {
@@ -100,6 +101,11 @@ function carritoHTML() {
                <td>
                     <a href="#" class="borrar-curso" data-id="${curso.id}">X</a>
                </td>
+               <td>
+                    <a href="app/inscripcion/inscripcion.component.html" class="qr-curso"">GenerarQR</a>
+                    
+               </td>
+               
           `;
           contenedorCarrito.appendChild(row);
      });
