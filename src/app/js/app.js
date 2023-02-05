@@ -102,8 +102,9 @@ function carritoHTML() {
                     <a href="#" class="borrar-curso" data-id="${curso.id}">X</a>
                </td>
                <td>
-                    <a href="app/inscripcion/inscripcion.component.html" class="qr-curso"">GenerarQR</a>
-                    
+               
+                    <a  class="qr-curso"">GenerarQR</a>
+                    <button type="button" href="app/GeneradorQR/index.html"> GenrarQR</button>
                </td>
                
           `;
@@ -121,5 +122,6 @@ function vaciarCarrito() {
      // forma rapida (recomendada)
      while(contenedorCarrito.firstChild) {
           contenedorCarrito.removeChild(contenedorCarrito.firstChild);
+          
       }
 }
