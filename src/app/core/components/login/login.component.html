@@ -16,14 +16,16 @@
 										<div class="section text-center">
 											<h4 class="mb-4 pb-3">Ingresar</h4>
 											<div class="form-group">
-												<input type="email" name="logemail" class="form-style" placeholder="Usuario" id="logemail" autocomplete="off">
+												
+												<input type="text" name="logCI" class="form-style" placeholder="Usuario" id="logCI" [(ngModel)]="logCI">
 												<i class="input-icon uil uil-at"></i>
 											</div>	
 											<div class="form-group mt-2">
-												<input type="password" name="logpass" class="form-style" placeholder="Contraseña" id="logpass" autocomplete="off">
+												<input type="password" name="logpass" class="form-style" placeholder="Contraseña" id="logpass" [(ngModel)]="logPass">
+												
 												<i class="input-icon uil uil-lock-alt"></i>
 											</div>
-											<a href="/principal" class="btn mt-4">Ingresar</a>
+											<button type="submit" class="btn btn-primary" (click)="ingresar()">Anadir</button>
 				      					</div>
 			      					</div>
 			      				</div>
