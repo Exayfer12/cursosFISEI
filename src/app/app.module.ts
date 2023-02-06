@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { AsistenciaComponent } from './asistencia/asistencia.component';
 import { CoreModule } from './core/core.module';
 import { LoginComponent } from './core/components/login/login.component';
+import { ConferencistasComponent } from './conferencistas/conferencistas.component';
 
 
 
@@ -17,7 +18,8 @@ import { LoginComponent } from './core/components/login/login.component';
     AppComponent,
     PrincipalComponent,
     HeaderComponent,
-    AsistenciaComponent
+    AsistenciaComponent,
+    ConferencistasComponent
   ],
   imports: [
     BrowserModule,

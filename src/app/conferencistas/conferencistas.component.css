@@ -1,0 +1,17 @@
+.card-body .btn{
+    position: relative;
+    align-content: center;
+}
+
+.card-body{
+    display: grid;
+    align-items: center;
+}
+
+.contenedor__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 5.5rem;
+    column-gap: 2rem;
+    align-items: center;
+}
